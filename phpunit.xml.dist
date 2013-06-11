@@ -2,15 +2,14 @@
 <phpunit bootstrap="tests/bootstrap.php" colors="true">
 
     <testsuite name="all-tests">
-        <directory>tests/Framework</directory>
+        <directory>./tests</directory>
     </testsuite>
 
     <filter>
         <whitelist>
-            <file>./public/front.php</file>
-            <file>./src/app.php</file>
-            <!--directory suffix=".php">./library</directory -->
-        </whitelist>
+            <directory suffix=".php">./src/Framework</directory>
+            <directory suffix=".php">./src/Calendar</directory>
+       </whitelist>
     </filter>
 
     <logging>

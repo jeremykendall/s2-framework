@@ -1,11 +1,21 @@
 {
     "require": {
-        "symfony/http-foundation": "2.1.*",
-        "symfony/routing": "2.1.*"
+        "symfony/http-foundation": "2.3.*",
+        "symfony/routing": "2.3.*",
+        "symfony/http-kernel": "2.3.*",
+        "symfony/event-dispatcher": "2.3.*",
+        "symfony/dependency-injection": "2.3.*"
     },
     "require-dev": {
         "jeremykendall/phpctagger": "dev-master"
-    },    
+    },
+    "autoload": {
+        "psr-0": 
+        {
+            "Framework": "src/",
+            "Calendar": "src/"
+        }
+    },
     "scripts": {
         "post-install-cmd": [
             "PhpCtagger\\Composer\\Script\\Ctagger::ctag"
@@ -14,5 +24,4 @@
             "PhpCtagger\\Composer\\Script\\Ctagger::ctag"
         ]
     }
-
 }

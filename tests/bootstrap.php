@@ -7,7 +7,6 @@ ini_set('display_startup_errors', 1);
 date_default_timezone_set('UTC');
 
 $loader = require_once realpath(__DIR__ . '/../vendor/autoload.php');
-$loader->add('Framework\\', __DIR__);
 
 define('APPLICATION_PATH', realpath(__DIR__ . '/..'));
 
