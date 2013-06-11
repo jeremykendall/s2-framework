@@ -1,0 +1,18 @@
+{
+    "require": {
+        "symfony/http-foundation": "2.1.*",
+        "symfony/routing": "2.1.*"
+    },
+    "require-dev": {
+        "jeremykendall/phpctagger": "dev-master"
+    },    
+    "scripts": {
+        "post-install-cmd": [
+            "PhpCtagger\\Composer\\Script\\Ctagger::ctag"
+        ],
+        "post-update-cmd": [
+            "PhpCtagger\\Composer\\Script\\Ctagger::ctag"
+        ]
+    }
+
+}
